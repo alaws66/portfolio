@@ -1,9 +1,10 @@
+import ThemeRegistry from '@/theme/ThemeRegistry';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Albert_Sans } from 'next/font/google';
 import { ReactNode } from 'react';
 
-const alberSans = Albert_Sans({
+const albertSans = Albert_Sans({
   weight: ['400', '700'],
   subsets: ['latin'],
 });
@@ -20,8 +21,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={alberSans.className}>
-        {children}
+      <body className={`text-primary-950 ${albertSans.className}`}>
+        <ThemeRegistry>{children}</ThemeRegistry>
       </body>
     </html>
   )
