@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navigation a:hover {
+  color: #78599f;
+  border-bottom: 2px solid #78599f;
+}
