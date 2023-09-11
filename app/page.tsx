@@ -1,5 +1,10 @@
 import { Button } from '@mui/material';
 import Image from 'next/image';
+import ReactLogo from '@/public/react-logo.png';
+import NextLogo from '@/public/next-logo.png';
+import TailwindLogo from '@/public/tailwindcss-logo.png';
+import TypescriptLogo from '@/public/typescript-logo.png';
+import MUILogo from '@/public/mui-logo.png';
 import Achievements from '@/components/Achievements';
 import laptop from '@/public/laptop.png';
 import laptopData from '@/public/laptop-data.png';
@@ -51,6 +56,25 @@ export default function Home() {
           Mauris tempus elementum ante, quis porta dolor pretium nec.
         </p>
         <Button variant="contained" className="text-sm md:text-base 2xl:text-lg">Button</Button>
+      </div>
+
+      <div className="mt-10 sm:px-3 md:px-10 xl:px-32 2xl:px-[20%] sm:py-5 bg-primary-50">
+        <div
+          className="
+            hidden sm:grid
+            sm:grid-cols-3 md:grid-cols-5
+            sm:grid-rows-2 md:grid-rows-1
+            justify-items-center items-center
+            gap-3
+            my-5
+          "
+        >
+          <Image src={ReactLogo} alt="React.js logo" width={80} height={70} />
+          <Image src={NextLogo} alt="Next.js logo" width={120} height={60} />
+          <Image src={TailwindLogo} alt="TailwindCSS logo" width={100} height={70} />
+          <Image src={TypescriptLogo} alt="Typescript logo" width={80} height={80} />
+          <Image src={MUILogo} alt="Material UI logo" width={80} height={60} />
+        </div>
       </div>
     </main>
   );
