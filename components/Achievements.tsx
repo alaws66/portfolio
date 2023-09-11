@@ -33,7 +33,6 @@ const Achievements = async () => {
         sm:grid-cols-2 lg:grid-cols-3
         grid-rows-6 sm:grid-rows-3 lg:grid-rows-2
         gap-3
-        mb-8
       "
     >
       {badges.map(({ id, name, earned_date, courses }: TBadges) => (
