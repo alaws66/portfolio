@@ -1,4 +1,6 @@
+import { Button } from '@mui/material';
 import Image from 'next/image';
+import Achievements from '@/components/Achievements';
 import laptop from '@/public/laptop.png';
 import laptopData from '@/public/laptop-data.png';
 
@@ -34,6 +36,21 @@ export default function Home() {
             className="hidden 2xl:block"
           />
         </div>
+      </div>
+
+      <div className="mx-3 md:mx-10 xl:mx-32 2xl:mx-[20%] my-10">
+        <h2 className="mt-8 mb-3 text-lg md:text-xl 2xl:text-2xl font-bold">
+          My recent educational achievements:
+        </h2>
+        <Achievements />
+      </div>
+
+      <div className="py-10 w-full text-center">
+        <p className="mx-3 md:mx-10 lg:mx-[20%] 2xl:mx-[25%] text-sm md:text-base 2xl:text-lg">
+          Proin nibh urna, fermentum vitae accumsan et, eleifend ut dolor. Ut efficitur rutrum libero, in bibendum leo lobortis vitae.
+          Mauris tempus elementum ante, quis porta dolor pretium nec.
+        </p>
+        <Button variant="contained" className="text-sm md:text-base 2xl:text-lg">Button</Button>
       </div>
     </main>
   );
