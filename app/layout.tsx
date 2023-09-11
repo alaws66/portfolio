@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Albert_Sans } from 'next/font/google';
 import Link from 'next/link';
 import { ReactNode } from 'react';
+import NavDrawer from '@/components/NavDrawer';
 
 const albertSans = Albert_Sans({
   weight: ['400', '700'],
@@ -39,16 +40,18 @@ export default function RootLayout({
     <html lang="en">
       <body className={`text-primary-950 ${albertSans.className}`}>
         <header className="w-full h-16 bg-primary-50">
-          <nav className="navigation absolute right-0 flex justify-end mx-5">
+          <nav className="navigation absolute right-0 flex justify-end sm:mx-5">
             {pages.map(({ page, url }) => (
               <Link
                 key={page}
                 href={url}
-                className="px-4 py-5 no-underline text-primary-950"
+                className="hidden sm:block px-4 py-5 no-underline text-primary-950"
               >
                 {page}
               </Link>
             ))}
+
+            <NavDrawer pages={pages} />
           </nav>
         </header>
         <ThemeRegistry>{children}</ThemeRegistry>
