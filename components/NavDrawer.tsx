@@ -26,7 +26,7 @@ const NavDrawer = ({ pages }: TPages) => {
     <>
       <IconButton
         onClick={() => setOpen(true)}
-        className="sm:hidden mt-3 mr-3"
+        className="sm:!hidden mt-3 mr-3"
       >
         <Menu />
       </IconButton>

@@ -9,6 +9,7 @@ import NavDrawer from '@/components/NavDrawer';
 const albertSans = Albert_Sans({
   weight: ['400', '700'],
   subsets: ['latin'],
+  preload: true
 });
 
 export const metadata: Metadata = {
