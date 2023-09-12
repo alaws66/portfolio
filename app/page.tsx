@@ -8,7 +8,7 @@ import MUILogo from '@/public/mui-logo.png';
 import Achievements from '@/components/Achievements';
 import laptop from '@/public/laptop.png';
 import laptopData from '@/public/laptop-data.png';
-import code from '@/public/code.png';
+import wires from '@/public/wires.png';
 
 export default function Home() {
   return (
@@ -51,7 +51,7 @@ export default function Home() {
         <Achievements />
       </div>
 
-      <Image src={code} alt="purple lines of code" className="my-10 w-full h-[12rem] object-cover" />
+      <Image src={wires} alt="group of wires graphic" className="my-10 w-full h-[12rem] object-cover" />
 
       <div className="py-10 w-full text-center">
         <p className="mx-3 md:mx-10 lg:mx-[20%] 2xl:mx-[25%] mt-0 text-sm md:text-base 2xl:text-lg">

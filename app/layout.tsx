@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`text-primary-950 ${albertSans.className}`}>
-        <header className="w-full h-16 bg-primary-50">
+        <header className="w-full h-10 sm:h-16 bg-primary-50">
           <nav className="navigation absolute right-0 flex justify-end sm:mx-5">
             {pages.map(({ page, url }) => (
               <Link
