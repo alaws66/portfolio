@@ -43,10 +43,10 @@ const Achievements = async () => {
                 <Typography variant="h3" className="text-base md:text-lg 2xl:text-xl font-bold">
                   {name}
                 </Typography>
-                <Typography variant="body1" className="text-xs md:text-sm">{courses[0].title}</Typography>
+                <Typography className="text-xs md:text-sm">{courses[0].title}</Typography>
               </div>
               <div className="skew flex justify-end items-end ml-auto p-3 w-1/2 text-primary-50 bg-primary-600">
-                <Typography variant="body1" className="pl-5">{formatDate(earned_date)}</Typography>
+                <Typography className="pl-5">{formatDate(earned_date)}</Typography>
               </div>
             </Link>
           </CardActionArea>
