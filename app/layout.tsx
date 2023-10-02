@@ -1,4 +1,3 @@
-import ThemeRegistry from '@/theme/ThemeRegistry';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Albert_Sans } from 'next/font/google';
@@ -55,7 +54,8 @@ export default function RootLayout({
             <NavDrawer pages={pages} />
           </nav>
         </header>
-        <ThemeRegistry>{children}</ThemeRegistry>
+
+        {children}
       </body>
     </html>
   );

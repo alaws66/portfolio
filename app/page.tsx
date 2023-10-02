@@ -58,7 +58,16 @@ export default function Home() {
           Proin nibh urna, fermentum vitae accumsan et, eleifend ut dolor. Ut efficitur rutrum libero, in bibendum leo lobortis vitae.
           Mauris tempus elementum ante, quis porta dolor pretium nec.
         </p>
-        <Button variant="contained" className="text-sm md:text-base 2xl:text-lg">Button</Button>
+        <Button
+          variant="contained"
+          className="text-sm md:text-base 2xl:text-lg"
+          sx={{
+            bgcolor: '#78599f',
+            ':hover': { bgcolor: '#644883' }
+          }}
+        >
+          Button
+        </Button>
       </div>
 
       <div className="mt-10 sm:px-3 md:px-10 xl:px-32 2xl:px-[20%] sm:py-5 bg-primary-50">

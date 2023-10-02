@@ -1,5 +1,5 @@
 import { Key } from 'react';
-import { Card, CardActionArea, Typography } from '@mui/material';
+import { Card, CardActionArea } from '@mui/material';
 import Link from 'next/link';
 
 type TBadges = {
@@ -40,13 +40,13 @@ const Achievements = async () => {
           <CardActionArea className="h-full">
             <Link href={courses[0].url} className="flex items-stretch h-full no-underline">
               <div className="p-3 text-primary-600">
-                <Typography variant="h3" className="text-base md:text-lg 2xl:text-xl font-bold">
+                <h3 className="m-0 text-base md:text-lg 2xl:text-xl font-bold">
                   {name}
-                </Typography>
-                <Typography className="text-xs md:text-sm">{courses[0].title}</Typography>
+                </h3>
+                <p className="m-0 text-xs md:text-sm">{courses[0].title}</p>
               </div>
               <div className="skew flex justify-end items-end ml-auto p-3 w-1/2 text-primary-50 bg-primary-600">
-                <Typography className="pl-5">{formatDate(earned_date)}</Typography>
+                <p className="m-0 pl-5">{formatDate(earned_date)}</p>
               </div>
             </Link>
           </CardActionArea>

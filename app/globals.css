@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  background-color: #e5def0;
+}
+
+h1,
+h2,
+h3,
+p,
+button {
+  font-family: '__Albert_Sans_629cb5', '__Albert_Sans_Fallback_629cb5' !important;
+}
+
 .navigation a:hover {
   color: #78599f;
   border-bottom: 2px solid #78599f;
